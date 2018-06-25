@@ -4,7 +4,8 @@ metadata:
   name: gke-base
 spec:
   replicas: 1
-  rollingUpdate:
+  strategy:
+    rollingUpdate:
         maxUnavailable: 0
   template:
     metadata:
