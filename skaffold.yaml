@@ -3,9 +3,7 @@ kind: Config
 build:
   artifacts:
   - imageName: gcr.io/nifty-yeti-164407/gke-base
-    workspace: .
     docker:
-        # Dockerfile's location relative to workspace. Defaults to "Dockerfile"
         dockerfilePath: kubernetes/Dockerfile
 deploy:
   kubectl:

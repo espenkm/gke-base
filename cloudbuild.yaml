@@ -1,0 +1,6 @@
+steps:
+- name: gcr.io/$PROJECT/skaffold:alpha
+  args: ['run', '-f=skaffold.yaml']
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-b'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=dev-cluster'
