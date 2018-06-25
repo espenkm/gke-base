@@ -1,2 +1,3 @@
 gke-base.i*
-node_modules/
+node_modules/*.ipr
+*.iws
