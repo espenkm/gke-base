@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: gke-base
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app:  gke-base
+    spec:
+      containers:
+      - name: gke-base
+        image: gcr.io/nifty-yeti-164407/gke-base
+        ports:
+        - containerPort: 3000
