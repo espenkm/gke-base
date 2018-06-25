@@ -1,0 +1,12 @@
+kind: Pod
+metadata:
+  name: app
+  namespace: default
+spec:
+  containers:
+  - image: $IMAGE_NAME
+    imagePullPolicy: IfNotPresent
+    name: app
+    ports:
+    - containerPort: 3000
+  restartPolicy: Always
